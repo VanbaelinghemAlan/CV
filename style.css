@@ -1,0 +1,68 @@
+@import url(font-awesome.min.css);
+
+:root {
+    font-size: 12px;
+    --container-width: 1350px;
+
+    --primary-color: #fb9179;
+    --secondary-color: #bdbf09;
+    --main-bg: #e6e6e6;
+    --dark-grey: #313335;
+    --dark-grey-transparent: rgba(49, 51, 53, 0.7);
+    --light-grey: #7a8085;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body.template-base {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: var(--main-bg);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--container-width);
+}
+
+.section {
+    margin-bottom: 7rem;
+}
