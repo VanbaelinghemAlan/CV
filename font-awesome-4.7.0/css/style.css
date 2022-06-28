@@ -1,0 +1,297 @@
+@import url(/font-awesome-4.7.0/css/font-awesome.min.css);
+
+:root {
+    font-size: 12px;
+    --container-width: 1350px;
+
+    --primary-color: #ff9900;
+    --secondary-color: #ce6504;
+    --main-bg: #f1fff0;
+    --dark-grey: #313335;
+    --dark-grey-transparent: rgba(49, 51, 53, 0.7);
+    --green: rgb(1, 95, 1);
+    --instagram-color: #b124b1;
+    --facebook-color: #3a5ca5;
+    --twitter-color: #60b3f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.backgroundImage {
+    background-image: url(/img/font.jpg);
+    position: absolute;
+    width: 100%;
+    height: 128%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.1;
+    border: var(--secondary-color) 2px solid;
+}
+@media screen and (min-width: 400px) {
+    .backgroundImage {
+          height: 85%;
+    }
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body.template-base {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: var(--main-bg);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--container-width);
+}
+
+.section {
+    margin-bottom: 7rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    }
+
+.mainTitle {    
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.theStar {
+    display: grid;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    vertical-align: center;
+    align-content: center;
+    grid-row: 1;
+    font-size: 2rem;
+}
+.theStar .photo-img {
+    width: 40%;
+}
+
+.header-container {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 3rem;
+    grid-row: 3;
+    justify-content: space-between;
+}
+
+.part1 {
+    display: grid;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    vertical-align: center;
+    align-content: center;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.part1 .photo-img {
+    width: 30%;
+    justify-self: center;
+}
+.part1 .h3 {
+    align-items: center;
+    justify-self: center;
+}
+.part1 .h4 {
+    grid-row : 1
+}
+
+.phoneNumber {
+   grid-row : 4;
+   margin-top: 1rem;
+    align-content: center;
+    justify-self: center;
+}
+.social-phone {
+    font-size: 3rem;
+    margin-left: 50%;
+    justify-self: center;
+}
+
+.part2 p {
+    font-size: 1.1rem;
+}
+
+.part2 .mail {
+    margin-top: 2rem;
+}
+
+.part2 .fa-envelope{
+    font-size: 3rem;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.social-mail {
+    margin-left: 50%;
+}
+
+
+
+.social-list .fa {
+    font-size: 3rem;
+    margin-left: 50%;
+}
+
+.social-list p {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-left: 25%;
+    }
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+  
+.social-link {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background var(--transition-duration) var(--transition-function);
+}
+
+.social-list .social-link .bg-facebook:hover {
+    background-color: var(--facebook-color);
+}
+
+.social-link .bg-twitter:hover {
+    background-color: var(--twitter-color);
+}
+
+.bg-instagram:hover {
+   background-color: var(--instagram-color);
+    /*je sais pas pourquoi ça fonctionne pas*/
+}
+
+/* Media start */
+@media screen and (min-width: 400px) {
+    .header-container {
+        grid-template-columns: 6;
+        grid-template-rows: 2;
+    }
+    
+    .theStar {
+        grid-column: 1 / 4; 
+        grid-row: 1 / 2;
+    }
+    .part1 {        
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+        margin-left: 4rem;
+    }
+
+    .part2 {
+    grid-column: 2;
+    grid-row: 2;
+        }
+     .social {
+    grid-column: 3;
+    grid-row: 2;
+    margin-bottom: 0;
+    margin-right: 5rem;
+                }
+}
+
+/* Media end */
+
+
+
+.date {
+    color: var(--secondary-color);
+}
+
+.formation {
+    margin-bottom: 2rem;
+}
+
+.backgroundImgFooter {
+    background-image: url(/img/Bamboo-Transparent-PNG.png);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    background-attachment:local;
+    opacity: 0.4;
+    z-index: 50
+}
+button, .fa {
+    display: flex;
+    font-size: 4rem;
+    color: var(--green);
+    margin-left: 40%;
+}
+
+.hobbies .h4 {
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
